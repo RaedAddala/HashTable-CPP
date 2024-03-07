@@ -126,7 +126,3 @@ void* hash_table_delete(hashtable* ht, const char* key) {
 static size_t hash_table_index(hashtable* ht, const char* key) {
     return (size_t)(ht->hash(key, strlen(key))) % (size_t)(ht->size);
 }
-
-int main() {
-    return 0;
-}
